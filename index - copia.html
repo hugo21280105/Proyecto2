@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<head>
+  <title>Juego de atrapar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Atrapa el cuadrado</h1>
+  <p>Haz click en el cuadrado rojo para ganar monedas</p>
+
+  <div class="info-bar">
+    <div id="score">Monedas: 0</div>
+    <div id="record">Récord: 0</div>
+  </div>
+
+  <div id="gameArea">
+    <div id="square"></div>
+    <div id="comboFlash">X2</div>
+  </div>
+
+  <div id="messageBox" class="messageBox"></div>
+
+  <div class="button-area">
+    <button id="inventoryButton">Inventario</button>
+    <button id="menuButton">Menú</button>
+    <button id="rulesButton">Reglas</button>
+  </div>
+
+  <div id="shop">
+    <h2>🛒 Tienda</h2>
+    <div id="shopItems"></div>
+  </div>
+
+
+  <div id="inventoryPanel" class="panel">
+    <h2>🎒 Inventario</h2>
+    <div id="inventoryContent"></div>
+    <button id="closeInventoryBtn">Cerrar</button>
+  </div>
+
+  <div id="menu" class="menu">
+    <h1>⏸️ Menú</h1>
+    <button id="resetButton">Reiniciar progreso</button>
+    <button id="backToGameBtn">Volver al juego</button>
+  </div>
+
+  <div id="rulesPanel" class="panel">
+    <h2>📜 Reglas</h2>
+    <p>Haz click en el cuadrado rojo para ganar monedas.</p>
+    <p>Si haces varios clicks seguidos rápidamente, activarás un combo x2.</p>
+    <p>Al fallar, pierdes el combo.</p>
+    <button id="closeRulesBtn">Cerrar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
